@@ -15,11 +15,12 @@ const HomePage: React.FC = () => {
             LocumApp
           </p>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-            Smarter scheduling for temporary healthcare staff.
+            Fill locum shifts faster with one simple app.
           </h1>
           <p className="text-base md:text-lg text-slate-300 mb-6 max-w-xl">
-            Connect locum staff with agencies, manage shifts, and reduce admin 
-            – all in one secure mobile app built for modern healthcare teams.
+            Connect locum staff with agencies, keep an accurate view of who is
+            available, and cut down on calls, texts, and spreadsheets – all in
+            one secure mobile app.
           </p>
 
           {/* Primary CTAs */}
@@ -98,7 +99,7 @@ const HomePage: React.FC = () => {
       {/* How it works */}
       <section className="px-6 py-12 md:py-16 max-w-5xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-          How LocumApp works
+          How LocumApp helps you fill gaps
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
@@ -106,7 +107,7 @@ const HomePage: React.FC = () => {
             <h3 className="text-base font-semibold mb-2">Create your profile</h3>
             <p className="text-sm text-slate-300">
               Sign up in minutes as a locum professional or an agency. Set your
-              preferences, locations, and availability.
+              skills, locations, and availability so the right shifts find you.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
@@ -114,7 +115,7 @@ const HomePage: React.FC = () => {
             <h3 className="text-base font-semibold mb-2">Match &amp; manage shifts</h3>
             <p className="text-sm text-slate-300">
               Browse upcoming shifts, request or assign staff, and keep
-              everything in one place.
+              bookings, confirmations, and changes in one place.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
@@ -122,7 +123,8 @@ const HomePage: React.FC = () => {
             <h3 className="text-base font-semibold mb-2">Stay in sync</h3>
             <p className="text-sm text-slate-300">
               Receive real-time updates on approvals, changes, and new
-              opportunities so nothing falls through the cracks.
+              opportunities so shifts are filled quickly and nothing falls
+              through the cracks.
             </p>
           </div>
         </div>
@@ -131,12 +133,12 @@ const HomePage: React.FC = () => {
       {/* Features */}
       <section className="px-6 py-12 md:py-16 max-w-5xl mx-auto border-y border-slate-900/60 bg-slate-950/80">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-          Built for busy healthcare teams
+          Built for busy healthcare teams who can't afford gaps
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <FeatureCard
             title="Reduce scheduling chaos"
-            body="Keep all locum shifts and availability in a single, structured view instead of scattered spreadsheets and chats."
+            body="Keep all locum shifts and availability in a single, structured view instead of scattered spreadsheets, chats, and calls."
           />
           <FeatureCard
             title="Stay in sync"
@@ -148,7 +150,7 @@ const HomePage: React.FC = () => {
           />
           <FeatureCard
             title="Designed for teams"
-            body="Agencies and organizations get an overview of multiple sites, teams, and roles in one place."
+            body="Agencies and organizations get an overview of multiple sites, teams, and roles in one place, so they can spot gaps early and fill them faster."
           />
         </div>
       </section>
@@ -292,13 +294,49 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
+      {/* About Us */}
+      <section id="about" className="px-6 py-12 md:py-16 max-w-5xl mx-auto border-t border-slate-900/60">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">About Us</h2>
+        <div className="text-sm text-slate-300 space-y-4 max-w-3xl">
+          <p>
+            <a
+              href="https://www.locum.care"
+              target="_blank"
+              rel="noreferrer"
+              className="text-emerald-400 hover:text-emerald-300 font-medium"
+            >
+              Locum Care
+            </a>{" "}
+            is a product of{" "}
+            <span className="text-slate-100 font-medium">
+              Aesculapius Professional Services Ltd
+            </span>
+            .
+          </p>
+          <p>
+            Aesculapius Professional Services Ltd operates in the healthcare
+            services sector, providing recruitment marketplaces, workforce
+            scheduling, and mental health assessments to hospitals, clinics, and
+            clinicians.
+          </p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="px-6 py-6 border-t border-slate-900/80 text-xs text-slate-500">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between gap-2">
           <span>
-            © {new Date().getFullYear()} LocumApp. All rights reserved.
+            © {new Date().getFullYear()} Aesculapius Professional Services Ltd. All rights reserved.
           </span>
           <div className="flex gap-4">
+            <a
+              href="https://www.locum.care"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-slate-300"
+            >
+              Locum Care
+            </a>
             <a href="/privacy" className="hover:text-slate-300">
               Privacy
             </a>
@@ -306,7 +344,7 @@ const HomePage: React.FC = () => {
               Terms
             </a>
             <a
-              href="mailto:support@locumapp.com"
+              href="mailto:support@locum.care"
               className="hover:text-slate-300"
             >
               Support
